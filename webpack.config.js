@@ -3,11 +3,11 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: [
-    "./src/index.html",
-    './src/index.js'
+    "./src/raw_components/index.html",
+    './src/raw_components/to-do-app.js'
   ],
   output: {
-    filename: 'index.js',
+    filename: 'to-do-app.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
