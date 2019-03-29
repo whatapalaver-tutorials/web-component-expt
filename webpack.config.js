@@ -1,15 +1,20 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: [
-    "./src/raw_components/index.html",
-    './src/raw_components/to-do-app.js'
-  ],
+  entry: './src/index.js',
   output: {
-    filename: 'to-do-app.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  watch: true,
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Web Components',
+      template: './src/index.html'
+    })
+  ],
   module: {
     rules: [
       {

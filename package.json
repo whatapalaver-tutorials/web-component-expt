@@ -17,8 +17,11 @@
     "@babel/runtime": "7.3.4",
     "babel-loader": "8.0.5",
     "http-server": "0.11.1",
+    "html-webpack-plugin": "3.2.0",
     "webpack": "4.29.6",
-    "webpack-cli": "3.0.8"
+    "webpack-cli": "3.0.8",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "lit-html": "^1.0.0"
   },
   "author": "",
   "license": "ISC",
